@@ -1,0 +1,139 @@
+
+body{
+	background:#ebebeb;
+	margin:0;
+	width:100%;
+	height: auto;
+	margin-left:20px;
+	margin-right:20px;
+//*CLASSE LISTES----------------------------------------------*//
+}
+.header{
+	width: 100%;
+	height: 154px;
+	background: linear-gradient( to left, #b0dc35, #f6b98a);
+	color:#ffffff;
+}
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-style:regular;
+	font-size:48px;
+}
+h2{
+	font-size:30px;
+	margin-left: 30px;
+}
+.listes{
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Andika', sans-serif;
+	font-style:blod;
+	font-size:30px;
+	padding-left:0;
+}
+.liste{
+	padding-bttom: 200px;
+}
+.nutritive{
+	display:flex;
+	justify-content:center;
+}
+//*CLASSE LISTES----------------------------------------------*//
+.fruit{
+	margin-bottom: 2px;
+	background:#fff;
+	
+	.cta {
+		display: flex;
+		align-items: center;
+
+		img { margin-left: 20px; }
+
+		.croix{
+		  width: 30px;
+		  height: 30px; 
+		  transform: scale(1.4);
+		  margin-right: 40px;
+		  margin-left: auto;
+
+		  &::before {
+  			background: #000;
+			position: absolute;
+			display:block;
+			content:'';
+			width: 70%;
+			height: 6%;
+			top: 47%;
+			left: 15%;
+			transform: rotate(90deg);
+		  }
+
+		  &::after {
+		  	background: #000;
+			position: absolute;
+			display:block;
+			content:'';
+			width: 6%;
+			height: 70%;
+			left: 47%;
+			top: 15%;
+			transform: rotate(90deg);
+		  }
+		}
+	}
+
+	.text{
+		display: none;
+		background:#fafafa;
+		overflow: hidden;
+		border-top: 3px solid #e69f70;
+		font-size:20px;
+
+		p{
+			padding-bottom:5px;
+			color:#929292;
+			margin-left:35px;
+
+		}
+		strong{
+			color:#000;
+		}
+	}
+
+
+	&.active {
+		h2 {
+			color:#e69f70;
+
+		}
+
+		.croix {
+			transform: scale(1.4) rotate(90deg);
+			&::before {
+				top:0;
+			    transform: rotate(45deg);
+				
+			}
+			 &::after {
+			 	bottom:0;
+			 	transform: rotate(45deg);
+
+			 }
+
+		}
+	}
+}
+
+//*CLASSE FLECH----------------------------------------------*//
+.flech{
+	float:right;
+
+}
+//*FOOTER CLASSE----------------------------------------------*//
+
+.footer{
+	width:100%;
+	padding-bottom:250px;
+}
+
+  
